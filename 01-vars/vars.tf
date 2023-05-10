@@ -22,4 +22,6 @@ variable "sample_dict"{
   }
 }
 
-variable "env"{}
+variable "env"{
+  value=var.env
+}

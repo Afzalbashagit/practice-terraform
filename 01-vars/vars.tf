@@ -13,3 +13,11 @@ variable "sample_list"{
     "a"
   ]
 }
+
+variable "sample_dict"{
+  default={
+    number1=100,
+    string1="helloworld",
+    boolean1=false
+  }
+}

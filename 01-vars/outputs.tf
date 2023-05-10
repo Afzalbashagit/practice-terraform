@@ -14,3 +14,7 @@ output "sample_list3"{
 output "sample_list5"{
   value=var.sample_list[4]
 }
+
+output "sample_dict1"{
+  value=var.sample_dict["number1"]
+}

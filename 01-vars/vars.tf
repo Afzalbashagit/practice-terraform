@@ -17,7 +17,7 @@ variable "sample_list"{
 variable "sample_dict"{
   default={
     number1=100,
-    string1="helloworld",
+    string1="hello world",
     boolean1=false
   }
 }

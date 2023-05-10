@@ -15,7 +15,13 @@ resource "aws_instance" "frontend" {
     Name = "frontend"
   }
 }
-
+resource "aws_route53_record" "frontend" {
+  zone_id = "Z01635288KBXSY9TJV2R"
+  name    = "frontend-dev.afzalbasha.cloud"
+  type    = "A"
+  ttl     = 300
+  records = [aws_instance.frontend.private_ip]
+}
 
 
 

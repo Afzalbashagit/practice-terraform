@@ -10,3 +10,7 @@ output "sample_string1"{
 output "sample_list3"{
   value=var.sample_list[2]
 }
+
+output "sample_list5"{
+  value=var.sample_list[4]
+}

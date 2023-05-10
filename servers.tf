@@ -1,14 +1,12 @@
 
 
-data "aws_ami" "centos8" {
-  owners           = ["973714476881"]
-  most_recent      = true
-  name_regex       = "Centos-8-DevOps-practice"
-}
+#data "aws_ami" "centos8" {
+#  owners           = ["973714476881"]
+#  most_recent      = true
+#  name_regex       = "Centos-8-DevOps-practice"
+#}
 
-output "ami"{
-  value=data.aws_ami.centos8.image_id
-}
+
 
 
 resource "aws_instance" "frontend" {
@@ -18,6 +16,9 @@ resource "aws_instance" "frontend" {
   tags = {
     Name = "frontend"
   }
+}
+output "frontend"{
+  value=aws_instance.frontend.private_ip
 }
 
 

@@ -1,10 +1,10 @@
 
 resource "null_resource" "fruits" {
-  for_each = var.fruits
+    for_each = var.fruits
 
-  provisioner "local-exec" {
-     command="Fruit name-${each.key},value-${each.value}"
-  }
+    provisioner "local-exec" {
+        command="Fruit name-${each.key},value-${each.value}"
+    }
 
 }
 

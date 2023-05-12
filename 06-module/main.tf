@@ -1,4 +1,4 @@
-module "dummy"
-{
+module "dummy"{
   source="./dummy"
+
 }
